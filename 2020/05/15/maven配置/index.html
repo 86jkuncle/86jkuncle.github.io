@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head><meta name="generator" content="Hexo 3.9.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <title>just blue.</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+  <body>
+    <header class="header">
+  <div class="blog-title">
+    <a href="/" class="logo">just blue.</a>
+  </div>
+  <nav class="navbar">
+    <ul class="menu">
+      
+        <li class="menu-item">
+          <a href="/" class="menu-item-link">Home</a>
+        </li>
+      
+        <li class="menu-item">
+          <a href="/archives" class="menu-item-link">Archives</a>
+        </li>
+      
+        <li class="menu-item">
+          <a href="/tags" class="menu-item-link">TAGS</a>
+        </li>
+      
+        <li class="menu-item">
+          <a href="/friends" class="menu-item-link">FRIENDS</a>
+        </li>
+      
+    </ul>
+  </nav>
+</header>
+
+    <main class="main">
+      <article class="post">
+  <div class="post-title">
+    <h2 class="title">maven配置</h2>
+  </div>
+   <div class="post-meta">
+    <span class="post-time">2020-05-15</span>
+  </div>
+  <div class="post-content">
+    <p>1.配置本地仓库,下载的jar包保存的路径</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;localRepository&gt;D:/tools/apache-maven-3.5.4/repository&lt;/localRepository&gt;</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+<p>2.配置远程仓库,从这些仓库中拉取jar包</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;mirror&gt;</span><br><span class="line">  &lt;id&gt;alimaven&lt;/id&gt;</span><br><span class="line">  &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;</span><br><span class="line">  &lt;name&gt;aliyun maven&lt;/name&gt;</span><br><span class="line">  &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public/&lt;/url&gt;</span><br><span class="line">&lt;/mirror&gt;</span><br><span class="line"></span><br><span class="line">&lt;mirror&gt;</span><br><span class="line">  &lt;id&gt;repo2&lt;/id&gt;</span><br><span class="line">  &lt;mirrorOf&gt;sec&lt;/mirrorOf&gt;</span><br><span class="line">  &lt;name&gt;Human Readable Name for this Mirror.&lt;/name&gt;</span><br><span class="line">  &lt;url&gt;http://repo2.maven.org/maven2/&lt;/url&gt;</span><br><span class="line">&lt;/mirror&gt;</span><br><span class="line"></span><br><span class="line">&lt;mirror&gt;</span><br><span class="line">  &lt;id&gt;uk&lt;/id&gt;</span><br><span class="line">  &lt;mirrorOf&gt;third&lt;/mirrorOf&gt;</span><br><span class="line">  &lt;name&gt;center-repo-in-uk&lt;/name&gt;</span><br><span class="line">  &lt;url&gt;http://uk.maven.org/maven2/&lt;/url&gt;</span><br><span class="line">&lt;/mirror&gt;</span><br></pre></td></tr></table></figure>
+
+<p>3.配置编译的jdk版本</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;profile&gt;</span><br><span class="line">	&lt;id&gt;jdk-1.8&lt;/id&gt;  </span><br><span class="line">	&lt;activation&gt;  </span><br><span class="line">		&lt;activeByDefault&gt;true&lt;/activeByDefault&gt;  </span><br><span class="line">		&lt;jdk&gt;1.8&lt;/jdk&gt;  </span><br><span class="line">	&lt;/activation&gt;  </span><br><span class="line">	&lt;properties&gt;  </span><br><span class="line">		&lt;maven.compiler.source&gt;1.8&lt;/maven.compiler.source&gt;  </span><br><span class="line">		&lt;maven.compiler.target&gt;1.8&lt;/maven.compiler.target&gt;  </span><br><span class="line">		&lt;maven.compiler.compilerVersion&gt;1.8&lt;/maven.compiler.compilerVersion&gt;</span><br><span class="line">	&lt;/properties&gt;</span><br><span class="line">&lt;/profile&gt;</span><br></pre></td></tr></table></figure>
+  </div>
+</article>
+    </main>
+  <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body>
+</html>

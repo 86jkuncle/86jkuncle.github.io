@@ -35,22 +35,18 @@
 </header>
 
     <main class="main">
-      <section class="archive">
-  <ul class="post-archive">
-    
-      <li class="post-item">
-        <span class="post-date">2020-06-01</span>
-        <a class="post-title" href="/2020/06/01/idea2020-1-1不能debug/">idea2020.1.1不能debug</a>
-      </li>
-    
-      <li class="post-item">
-        <span class="post-date">2019-09-20</span>
-        <a class="post-title" href="/2019/09/20/idea插件查找/">idea插件在线查找</a>
-      </li>
-    
-  </ul>
-</section>
-
+      <article class="post">
+  <div class="post-title">
+    <h2 class="title">nginx配置目录浏览</h2>
+  </div>
+   <div class="post-meta">
+    <span class="post-time">2020-05-15</span>
+  </div>
+  <div class="post-content">
+    <p>配置在 http 节点下面</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">autoindex on;  # 开启目录文件列表</span><br><span class="line">autoindex_exact_size on;  # 显示出文件的确切大小，单位是bytes(字节)</span><br><span class="line">autoindex_localtime on;  # 显示的文件时间为文件的服务器时间</span><br><span class="line">charset utf-8,gbk;  # 避免中文乱码</span><br><span class="line"></span><br><span class="line">另外，如果希望请求文件是下载而不是显示内容，可以通过添加下面参数实现：</span><br><span class="line"></span><br><span class="line">add_header Content-Disposition attachment;</span><br></pre></td></tr></table></figure>
+  </div>
+</article>
     </main>
   <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body>
 </html>

@@ -35,154 +35,31 @@
 </header>
 
     <main class="main">
-      <section class="posts">
-  
-    <article class="post">
-      <div class="post-title">
-        <a class="post-title-link" href="/2020/06/01/idea2020-1-1不能debug/">idea2020.1.1不能debug</a>
-      </div>
-      <div class="post-content">
-		
-	  </div>
-      <div class="post-meta">
-        <span class="post-time">2020-06-01</span>
-      </div>
-    </article>
-  
-    <article class="post">
-      <div class="post-title">
-        <a class="post-title-link" href="/2020/05/15/wequick下载地址/">wequick下载地址</a>
-      </div>
-      <div class="post-content">
-		
-	  </div>
-      <div class="post-meta">
-        <span class="post-time">2020-05-15</span>
-      </div>
-    </article>
-  
-    <article class="post">
-      <div class="post-title">
-        <a class="post-title-link" href="/2020/05/15/nginx配置目录浏览/">nginx配置目录浏览</a>
-      </div>
-      <div class="post-content">
-		
-	  </div>
-      <div class="post-meta">
-        <span class="post-time">2020-05-15</span>
-      </div>
-    </article>
-  
-    <article class="post">
-      <div class="post-title">
-        <a class="post-title-link" href="/2020/05/15/tomcat配置ssl证书/">tomcat配置ssl证书</a>
-      </div>
-      <div class="post-content">
-		
-	  </div>
-      <div class="post-meta">
-        <span class="post-time">2020-05-15</span>
-      </div>
-    </article>
-  
-    <article class="post">
-      <div class="post-title">
-        <a class="post-title-link" href="/2020/05/15/linux下的文件解压tar/">linux下的文件解压tar</a>
-      </div>
-      <div class="post-content">
-		<p>1.文件解压到指定目录<br>文件 aaa.tar.gz 解压后默认解压到 aaa 文件夹,如果我想解压到 a 文件夹,命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf ./aaa.tar.gz --strip-components=1 -C ./a/</span><br></pre></td></tr></table></figure>
-	  </div>
-      <div class="post-meta">
-        <span class="post-time">2020-05-15</span>
-      </div>
-    </article>
-  
-    <article class="post">
-      <div class="post-title">
-        <a class="post-title-link" href="/2020/05/15/maven配置/">maven配置</a>
-      </div>
-      <div class="post-content">
-		<p>1.配置本地仓库,下载的jar包保存的路径</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;localRepository&gt;D:/tools/apache-maven-3.5.4/repository&lt;/localRepository&gt;</span><br></pre></td></tr></table></figure>
-	  </div>
-      <div class="post-meta">
-        <span class="post-time">2020-05-15</span>
-      </div>
-    </article>
-  
-    <article class="post">
-      <div class="post-title">
-        <a class="post-title-link" href="/2020/05/15/dataTable服务端分页自定义传参/">dataTable服务端分页自定义传参</a>
-      </div>
-      <div class="post-content">
-		<p>1.关键代码,需要提前在html里定义好表格的标题,严格的table标签</p>
+      <article class="post">
+  <div class="post-title">
+    <h2 class="title">dataTable服务端分页自定义传参</h2>
+  </div>
+   <div class="post-meta">
+    <span class="post-time">2020-05-15</span>
+  </div>
+  <div class="post-content">
+    <p>1.关键代码,需要提前在html里定义好表格的标题,严格的table标签</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;table id=&quot;table&quot;&gt;</span><br><span class="line">	&lt;thead&gt;</span><br><span class="line">		&lt;th&gt;昵称&lt;/th&gt;</span><br><span class="line">		&lt;th&gt;头像&lt;/th&gt;</span><br><span class="line">		&lt;th&gt;姓名&lt;/th&gt;</span><br><span class="line">		&lt;th&gt;性别&lt;/th&gt;</span><br><span class="line">	&lt;/thead&gt;</span><br><span class="line">	&lt;tbody&gt;</span><br><span class="line">	&lt;/tbody&gt;</span><br><span class="line">&lt;/table&gt;</span><br></pre></td></tr></table></figure>
 
 <p>===</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">	//封装成方法,可以将想要传入服务器的值传入此方法,不限个数</span><br><span class="line">    function searchTableData(nickname,type_,openid,mobile,startdate,enddate) &#123;</span><br><span class="line">		if ($.fn.dataTable.isDataTable(&apos;#table&apos;))</span><br><span class="line">		&#123;</span><br><span class="line">			_table = $(&apos;#table&apos;).DataTable();</span><br><span class="line">			_table.destroy();</span><br><span class="line">		&#125;</span><br><span class="line">		var table=$(&apos;#table&apos;).DataTable(&#123;</span><br><span class="line">			&quot;lengthMenu&quot;: [10, 25, 50, 75, 100],</span><br><span class="line">			&quot;pageLength&quot;: 10,</span><br><span class="line">			&quot;stripeClasses&quot;: [&quot;odd&quot;, &quot;even&quot;],</span><br><span class="line">			&quot;olanguage&quot; : &#123;</span><br><span class="line">				&quot;processing&quot; : &quot;处理中...&quot;,</span><br><span class="line">				&quot;lengthMenu&quot; : &quot;每页显示 _MENU_ 条记录&quot;,</span><br><span class="line">				&quot;zeroRecords&quot; : &quot;没有检索到数据&quot;,</span><br><span class="line">				&quot;info&quot; : &quot;从 _START_ 到 _END_ /共 _TOTAL_ 条数据&quot;,</span><br><span class="line">				&quot;infoEmpty&quot; : &quot;没有数据&quot;,</span><br><span class="line">				&quot;search&quot; : &quot;搜索&quot;,</span><br><span class="line">				&quot;infoFiltered&quot; : &quot;(从 _MAX_ 条数据中检索)&quot;,</span><br><span class="line">				&quot;paginate&quot; : &#123;</span><br><span class="line">					&quot;first&quot; : &quot;首页&quot;,</span><br><span class="line">					&quot;previous&quot; : &quot;前一页&quot;,</span><br><span class="line">					&quot;next&quot; : &quot;后一页&quot;,</span><br><span class="line">					&quot;last&quot; : &quot;尾页&quot;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;,</span><br><span class="line">			&quot;paginate&quot; : true,//开启分页</span><br><span class="line">			&quot;pagingType&quot;:&quot;simple_numbers&quot;,//分页的显示方式</span><br><span class="line">			&quot;destroy&quot;:true,</span><br><span class="line">			&quot;info&quot;:false,</span><br><span class="line">			&quot;lengthChange&quot;:true,</span><br><span class="line">			&quot;searching&quot;:false,</span><br><span class="line">			&quot;processing&quot;:true,</span><br><span class="line">			&quot;serverSide&quot;:true,//这个选项代表服务端分页,数据量大会一页一页查,这样就不会卡页面</span><br><span class="line">			&quot;ordering&quot;:false,</span><br><span class="line">			&quot;ajax&quot;:function(data,callback,setting)&#123;</span><br><span class="line">                debugger;</span><br><span class="line">                //封装请求参数</span><br><span class="line">                var param = &#123;&#125;;</span><br><span class="line">                param.limit = data.length;//页面显示记录条数，在页面显示每页显示多少项的时候</span><br><span class="line">                param.start = data.start;//开始的记录序号</span><br><span class="line">                param.page = (data.start / data.length)+1;//当前页码</span><br><span class="line">                param.startDate=startdate;</span><br><span class="line">                param.endDate=enddate;</span><br><span class="line">                param.nickname=nickname;</span><br><span class="line">                param.type_=type_;</span><br><span class="line">                param.openid=openid;</span><br><span class="line">                param.mobile=mobile;</span><br><span class="line">                //console.log(param);</span><br><span class="line">                //ajax请求数据</span><br><span class="line">                $.ajax(&#123;</span><br><span class="line">                    type: &quot;POST&quot;,</span><br><span class="line">                    url: &quot;$&#123;ctx&#125;/search&quot;,</span><br><span class="line">                    cache: false,  //禁用缓存</span><br><span class="line">                    data: param,  //传入组装的参数</span><br><span class="line">                    dataType: &quot;json&quot;,</span><br><span class="line">                    success: function (result) &#123;</span><br><span class="line">                        //console.log(result);</span><br><span class="line">						//result是一个json 有四个值</span><br><span class="line">						data,表格中需要显示的数据,是一个对象数组</span><br><span class="line">						draw,请求次数,请求的时候传过来的,需要再传回</span><br><span class="line">						recordsTotal,总的记录数</span><br><span class="line">						recordsFiltered,文档上说是筛选的记录数,实际上这个的值也是总记录数,否则只能看到一页的数据,真吭</span><br><span class="line">						</span><br><span class="line">						//传给dataTable的回调函数</span><br><span class="line">                        callback(result);</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;);</span><br><span class="line">            &#125;,</span><br><span class="line">            &quot;columns&quot;: [</span><br><span class="line">                &#123; data: &apos;nick_name&apos; &#125;,</span><br><span class="line">                &#123; </span><br><span class="line">					data: &apos;head_pic&apos; ,</span><br><span class="line">					&quot;render&quot;: function (data, type, row, meta) &#123;</span><br><span class="line">						return &apos;&lt;img alt=&quot;image&quot; class=&quot;img-circle&quot; src=&quot;&apos;+data+&apos;&quot; style=&quot;width:50px;&quot;/&gt;&apos;;</span><br><span class="line">                    &#125;</span><br><span class="line">				&#125;,</span><br><span class="line">                &#123; </span><br><span class="line">					data: &apos;name&apos; ,</span><br><span class="line">					&quot;render&quot;: function (data, type, row, meta) &#123;</span><br><span class="line">						if(data == null)&#123;</span><br><span class="line">                            return &apos;&apos;;</span><br><span class="line">						&#125;else&#123;</span><br><span class="line">                            return data;</span><br><span class="line">						&#125;</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;,</span><br><span class="line">				&#123; </span><br><span class="line">					data: &apos;sex&apos;,</span><br><span class="line">					&quot;render&quot;: function (data, type, row, meta) &#123;</span><br><span class="line">                        if(data == 1)&#123;</span><br><span class="line">                            return &apos;男&apos;;</span><br><span class="line">                        &#125;else&#123;</span><br><span class="line">							return &apos;女&apos;;</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line">				&#125;,</span><br><span class="line">                &#123;</span><br><span class="line">					&quot;render&quot;:function(data,type,row,meta)&#123;</span><br><span class="line">                        return &apos;&lt;button class=&quot;btn btn-warning&quot; onclick=&quot;enable(\&apos;&apos; +row.id+ &apos;\&apos;)&quot;&gt;设置&lt;/button&gt;&apos;;</span><br><span class="line">                    &#125;</span><br><span class="line">				&#125;</span><br><span class="line">			]</span><br><span class="line">		&#125;);</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-	  </div>
-      <div class="post-meta">
-        <span class="post-time">2020-05-15</span>
-      </div>
-    </article>
-  
-    <article class="post">
-      <div class="post-title">
-        <a class="post-title-link" href="/2019/12/09/生活小常识/">生活小常识</a>
-      </div>
-      <div class="post-content">
-		<p>最便宜的药治常见病：</p>
-<pre><code>一：腹泻（急性）</code></pre><p>　　一般的用保济丸就可以了（三毛一代），如果较严重的话用氟哌酸（七毛一板）搞定。</p>
-<p>　　二：感冒</p>
-<p>　　刚想感冒时也就是有一点点症状时不要忽视，这个时候最重要，用维C（五毛一代）或速效伤风胶囊（六毛钱一板），如果发烧就加用安乃近（两块左右一盒，有的药店可拆散卖。吃此药要多喝水）<br>　　如果流鼻涕或鼻塞得很厉害，可以用琦克（这个较贵，十块一盒，但见效快，一颗见效，可以拆着卖，1块7一颗。）</p>
-<p>　　三：咳嗽</p>
-<p>　　1.咳嗽有痰而且痰黄或带血丝，可用牛黄蛇胆川贝液（一块多两块钱都有）+阿莫西林（两块左右）<br>　　2.干咳或痰少可用甘草片（两三块左右）+阿莫西林。</p>
-<p>　　四：咽喉肿痛</p>
-<p>　　刚开始不舒服就注意了，立即吃药，可用清火片或牛黄片（一毛一代），再严重些可加阿莫西林。</p>
-<p>　　五：牙痛</p>
-<p>　　红霉素片3粒+维生素B1（4粒）+维生素B2（2粒）开水送服，一天两次，半小时止痛。</p>
-<p>　　注意：以上用药不适合少儿及孕妇</p>
-<pre><code>治高血压：</code></pre><p>（1）香蕉皮30克，晒干水煎喝，每日3次，一个月见效。<br>（2）用中药罗布麻，开水冲喝，每日15克，半月见效。<br>（3）银杏叶每日15克，用开水冲喝下，半月见效。</p>
-	  </div>
-      <div class="post-meta">
-        <span class="post-time">2019-12-09</span>
-      </div>
-    </article>
-  
-    <article class="post">
-      <div class="post-title">
-        <a class="post-title-link" href="/2019/11/08/三小时学会Kubernetes/">三小时学会Kubernetes</a>
-      </div>
-      <div class="post-content">
-		
-	  </div>
-      <div class="post-meta">
-        <span class="post-time">2019-11-08</span>
-      </div>
-    </article>
-  
-    <article class="post">
-      <div class="post-title">
-        <a class="post-title-link" href="/2019/11/05/jenkins自动部署/">jenkins自动部署</a>
-      </div>
-      <div class="post-content">
-		<p>在代码push到仓库后,使用jenkins一键部署,完成自动拉取代码,编译,测试,打包,上传服务器等操作</p>
-<h1 id="一、下载jenkins"><a href="#一、下载jenkins" class="headerlink" title="一、下载jenkins"></a>一、下载jenkins</h1><p><a href="https://jenkins.io/zh/" target="_blank" rel="noopener">jenkins中文官网</a><br>windows平台下载war包</p>
-<h1 id="二、启动"><a href="#二、启动" class="headerlink" title="二、启动"></a>二、启动</h1><p>进入到jenkins下载目录</p>
-<p><code>java -jar jenkins.war</code></p>
-	  </div>
-      <div class="post-meta">
-        <span class="post-time">2019-11-05</span>
-      </div>
-    </article>
-  
-</section>
 
-  <nav class="page-nav">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
-  </nav>
+<a id="more"></a>
+<p>2.在第3页更新了数据,如果重载页面会跳到第一页,可以使用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(&apos;#table&apos;).DataTable().draw()</span><br></pre></td></tr></table></figure>
 
+<p>只刷新当前页的数据,用户体验会有提升</p>
+<ol start="3">
+<li>.DataTable()获取的是原生DataTable对象, .dataTable()获取的是JQuery对象<br>jquery.api()转成原生对象,DataTable.to$()</li>
+</ol>
+
+  </div>
+</article>
     </main>
   <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body>
 </html>
