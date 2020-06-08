@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head><meta name="generator" content="Hexo 3.9.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <title>just blue.</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+  <body>
+    <header class="header">
+  <div class="blog-title">
+    <a href="/" class="logo">just blue.</a>
+  </div>
+  <nav class="navbar">
+    <ul class="menu">
+      
+        <li class="menu-item">
+          <a href="/" class="menu-item-link">Home</a>
+        </li>
+      
+        <li class="menu-item">
+          <a href="/archives" class="menu-item-link">Archives</a>
+        </li>
+      
+        <li class="menu-item">
+          <a href="/tags" class="menu-item-link">TAGS</a>
+        </li>
+      
+        <li class="menu-item">
+          <a href="/friends" class="menu-item-link">FRIENDS</a>
+        </li>
+      
+    </ul>
+  </nav>
+</header>
+
+    <main class="main">
+      <article class="post">
+  <div class="post-title">
+    <h2 class="title">python第一天</h2>
+  </div>
+   <div class="post-meta">
+    <span class="post-time">2020-06-09</span>
+  </div>
+  <div class="post-content">
+    <h1 id="python初识"><a href="#python初识" class="headerlink" title="python初识"></a>python初识</h1><p>1.python下载安装<br><a href="http://www.python.org" title="python下载地址" target="_blank" rel="noopener">python官网</a><br>下载3.X版本</p>
+<p>2.自带编辑器<br>idle,自带的简易编辑器,写脚本调试的时候用,非常方便<br>print(“hello world”)</p>
+<p>3.注释<br>一个 # 号是单行注释<br>头尾三个 ‘ 或者 “ 是多行注释</p>
+<p>4.标识符<br>首位以 _ 或者 字母 开头,后面接 _、字母或者数字,<strong>使用前必须先声明</strong></p>
+<p>5.基本数据类型</p>
+<ul>
+<li><p>数字</p>
+<ul>
+<li>0,1,2,3,4,5,6</li>
+<li>8.8,9.9,8.8+9.9 = 18.700000000000003 </li>
+<li>只有一位小数的数和另一个只有一位小数的数相加,会出现 0003 bug,</li>
+<li>有两位小数的数和不为0的正整数相加,会出现 00003 bug,8.88+9= 17.880000000000003</li>
+<li>两位小数的数和另一个两位小数的数相加、或者另一个一位小数的数相加不会出现</li>
+<li><strong>只有一位小数的数只和整数或另一个有两位小数的数做操作,不要和只有一位小数的数做操作</strong></li>
+<li><strong>只有两位小数的数不要和整数操作</strong></li>
+</ul>
+</li>
+<li><p>字符串</p>
+<ul>
+<li>“abc”,’a’</li>
+</ul>
+</li>
+<li><p>列表</p>
+<ul>
+<li>以 [] 声明,元素之间用 , 隔开</li>
+<li>a = [“a”,8,9,’10’]</li>
+<li>b = [11,”abc”,a]</li>
+<li>双引号也会被替换为单引号,索引从 0 开始,以下标访问 a[0],a[1]</li>
+<li>可以有多种数据类型,包括 数字、字符串、列表、元组、字典</li>
+<li>列表内的元组可以被重新赋值,实际上改变的不是元组本身,而是一个新的变量</li>
+<li><strong>元素可以被重新赋值 a[0] = 5,可以被赋值成不同的数据类型</strong></li>
+</ul>
+</li>
+<li><p>元组</p>
+<ul>
+<li>以 () 声明,元素之间用 , 隔开</li>
+<li>a = (‘a’,8,9,’10’)</li>
+<li>b = (8,9,a)</li>
+<li>索引从 0 开始,以下标访问 a[0],b[1]</li>
+<li>可以有多种数据类型,包括 数字、字符串、列表、元组、字典</li>
+<li><strong>元素不可以被重新赋值,元组内的列表也不能被重新赋值</strong></li>
+</ul>
+</li>
+<li><p>字典</p>
+<ul>
+<li>以 {} 声明,元素之间用 , 隔开</li>
+<li>使用键值对的方式 {‘a’:1,’b’:2},</li>
+<li>键可以是字符串或者数字,值可以是 数字、字符串、列表、元组、字典,</li>
+<li>值如果是列表、元组或字典,可以使用下标或者键来访问</li>
+<li><strong>字典的值可以被重新赋值,可以被赋值成不同的数据类型</strong></li>
+</ul>
+</li>
+<li><p>集合</p>
+<ul>
+<li>以 set() 声明,set()只能有一个参数</li>
+<li>集合可以去重,去重后是一个只有值的字典</li>
+<li>如果 set() 参数为字典,则值为键组成的一个无值字典</li>
+<li><strong>如果 set() 参数为列表、元组,而这当中又有列表、元组,set()只会去除第一层的重复值,第二层的列表和元组不会去重</strong></li>
+<li>集合和集合之间可以运算,计算集合之间的交集,并集</li>
+</ul>
+</li>
+</ul>
+<p>6.运算符<br>(+ - * / %),+号可用于字符串拼接,小括号用于提升优先级</p>
+<p>7.强制缩进<br>在有 if for while或者其他语句时,下级语句必须缩进</p>
+
+  </div>
+</article>
+    </main>
+  <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body>
+</html>
