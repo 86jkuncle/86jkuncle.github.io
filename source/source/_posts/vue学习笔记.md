@@ -251,3 +251,33 @@ async await 语法糖,async声明过的函数返回的是 promise,不必再写�
 
 e.使用单一状态树，应用的所有状态会集中到一个比较大的对象。当应用变得非常复杂时，store 对象就有可能变得相当臃肿
 为了解决以上问题，Vuex 允许我们将 store 分割成模块（module）。每个模块拥有自己的 state、mutation、action、getter、甚至是嵌套子模块
+
+27.路由基础使用
+a.安装 npm install vue-router
+b.引入 main.js中 import VueRouter from 'vue-router',Vue.use(VueRouter)
+c.定义组件,在 main.js 引入
+d.定义路由规则 
+```
+const routes = [
+	{path:'/foo',component:Foo},
+	{path:'/bar',component:Bar}
+]
+```
+e.创建路由对象
+```
+const router = new VueRouter({
+	routes
+})
+```
+f.Vue实例中挂载路由
+```
+new Vue({
+  el: '#app',
+  router,
+  render: h => h(App)
+})
+```
+g.根据路由转载
+```
+<router-view></router-view>
+```
